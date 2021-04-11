@@ -1,0 +1,121 @@
+/* .example-background {
+  width: 1280px;
+  height: 1024px;
+  background: linear-gradient(#e66465, #9198e5);
+} */
+body {
+  background: linear-gradient(#e66465, #9198e5);
+  height: 785px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size:15px;
+}
+
+.todo-app__header {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 400px;
+  min-height: 500px;
+  background-color: #fefefe;
+  text-align: center;
+  border-radius: 3px;
+  margin: 128px auto;
+}
+
+.todo-form {
+  width: 350px;
+}
+
+.todo-form__input {
+  padding: 8px 32px 8px 16px;
+  width: 285px;
+  border: 2px solid #d8d7d7;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: none;
+  resize: none;
+}
+
+.todo-form__input + .todo-form__add{
+  margin-left: 5px;
+}
+
+.todo-form__add {
+  padding: 10px 16px 10px 16px;
+  background: linear-gradient(
+    90deg,
+    rgb(136,90,255) 0%,
+    rgb(128, 44, 161) 100%
+  );
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+
+.todo-list {
+  margin: 20px 0;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  background: #fefefe;
+}
+
+.todo-item {
+  padding: 8px 12px 8px 16px;
+  border: 2px solid #d8d7d7;
+  background-color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 20px;
+  border-radius: 3px;
+}
+
+.todo-item p {
+  width:80%;
+  text-align:justify;
+}
+
+.todo-icons {
+  width:14%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item__check, .todo-item__remove {
+  color: #d8d7d7;
+  cursor: pointer;
+}
+
+.todo-item__check :hover {
+  color:#c2f9fd;
+}
+
+.todo-item__check-completed {
+  color:#69db3c;
+  cursor: pointer;
+}
+
+.todo-item__remove :hover {
+  color:#c03030;
+}
+

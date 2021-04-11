@@ -1,0 +1,37 @@
+.tabs {
+    width: 350px;
+    /* border:1px solid black; */
+    margin-top:20px;
+}
+
+.tabs__titles {
+    display: flex;
+}
+
+.tab__button {
+  background-color: #fefefe;
+    padding: 10px 16px 10px 16px;
+    /* background: linear-gradient(
+      90deg,
+      rgb(136,90,255) 0%,
+      rgb(128, 44, 161) 100%
+    ); */
+    color: #000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.tab__button_activate {
+    padding: 10px 16px 10px 16px;
+    /* background: linear-gradient(
+      90deg,
+      rgb(4,92,255) 0%,
+      rgb(128, 44, 161) 100%
+    ); */
+    color: #000;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
