@@ -3,6 +3,7 @@ import { FaCheck } from 'react-icons/all'
 import './Todo.css'
 
 export type TodoItem = {
+    id: string
     date: Date,
     value: string,
     completed: boolean,
@@ -12,18 +13,14 @@ export type TodoItem = {
 
 
 
-export const TodoItem = ({date, value, completed, onDelete, onComplete} : TodoItem) => {
+export const TodoItem = ({id, date, value, completed, onDelete, onComplete} : TodoItem) => {
 
-    const handleDelete = () => {
-        onDelete(value)
-    }
+    const handleDelete = () => onDelete(id)
 
-    const handelCompleted = () => {
-        onComplete(value)
-    }
+    const handelCompleted = () => onComplete(id)
 
     return (
-        <div className="todo-item">
+        <div key={date.toString()} className="todo-item">
             <p className="todo-item__text">
                 { completed ? <s>{value}</s> : value}
             </p>

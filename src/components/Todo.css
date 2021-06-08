@@ -3,6 +3,7 @@
   height: 1024px;
   background: linear-gradient(#e66465, #9198e5);
 } */
+
 body {
   background: linear-gradient(#e66465, #9198e5);
   height: 785px;
@@ -119,3 +120,6 @@ body {
   color:#c03030;
 }
 
+.barchar {
+  margin-left: -20px;
+}
